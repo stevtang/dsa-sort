@@ -24,6 +24,25 @@ function merge(sorted1, sorted2) {
   return merged;
 }
 
-function mergeSort() {}
+function mergeSort(unsorted) {
+
+
+    
+
+    return sorted;
+}
+
+function divideArray(arr, dividedArr = []){
+
+    if(arr.length === 1 || arr.length === 0) return dividedArr.push(arr);
+    
+    let half  = Math.floor(arr.length/2);
+    let left = arr.slice(0,half);
+    let right = arr.slice(half);
+
+    divideArray(left);
+    divideArray(right);
+
+}
 
 module.exports = { merge, mergeSort};
